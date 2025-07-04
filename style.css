@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+
+
+.header {
+    background: rgb(203, 188, 188);
+    height: 6rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 1rem 5rem;
+    box-shadow: 0px -3px 11px 1px;
+}
+
+.header button {
+    display: grid;
+    color: #0b3723;
+
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.logo {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #918c8c;
+    font-weight: bolder;
+}
+
+.logo:visited {
+    color: white;
+}
+
+.logo:hover {
+    color: azure;
+}
+
+.add-dialog {
+    /* display: flex; ❌ Entfernen */
+    flex-direction: column;
+    place-self: center;
+    width: auto;
+    height: auto;
+    padding: 1.5rem;
+    border: 0.1rem rgba(0, 0, 0, 0.3) solid;
+    border-radius: 0.4rem;
+    box-shadow: 0rem 0rem 1rem 0.01rem;
+}
+
+.add-dialog::backdrop {
+    backdrop-filter: blur(3px);
+}
+
+.dialog-top {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+}
+
+.dialog-close-btn {
+    background: transparent;
+    padding: 0px;
+}
+
+.dialog-close-btn:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.add-dialog .dialog-add-btn {
+    background: rgb(5, 194, 5);
+    font-size: 1rem;
+    color: white;
+    padding: 0.2rem;
+    width: 8rem;
+    border-radius: 0.3rem;
+}
+
+.dialog-add-btn:hover {
+    background-color: #079a58;
+}
+
+.dialog-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog-main label {
+    font-size: 1.2rem;
+}
+
+.dialog-main input {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.849);
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+    font-size: 0.9rem;
+    border-radius: 0.4rem;
+    border: 0.01rem solid rgba(0, 0, 0, 0.292);
+}
+
+.cards-container {
+    display: grid;
+    margin: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background-color: rgb(245, 234, 234);
+    border-radius: 5px;
+    padding-top: 1rem;
+    display: grid;
+    justify-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.179);
+
+}
+
+.card .card-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.card-author {
+    margin-bottom: 1rem;
+}
+
+.card-pages {
+    margin-bottom: 1rem;
+}
+
+.card-delete-btn:hover{
+    background-color: #b60b0b;
+    cursor: pointer;
+}
+
+.card-read-btn:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.card-delete-btn,
+.card-read-btn {
+    width: 40%;
+    padding: 0.2rem;
+    background-color: red;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+}

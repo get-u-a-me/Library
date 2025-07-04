@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    
+    <header class="header">
+        <a href="#" class="logo"><i class="fa fa-book" aria-hidden="true"></i> Library</a>
+        <div>
+            <button class="add-btn">Add Book</button>
+        </div>
+
+        <dialog class="add-dialog">
+            <div class="dialog-top">
+                <h2>Book Entry Form</h2>
+                <button class="dialog-close-btn">X</button>
+            </div>
+            <form class="dialog-main" action="">
+                <label for="title">Title:</label>
+                <input type="text" id="title" required placeholder="e.g (Gay)">
+                <label for="author">Author:</label>
+                <input type="text" id="author" required placeholder="e.g (also Gay)">
+                <label for="pages">Number of pages:</label>
+                <input type="number" id="pages" required placeholder="e.g (7)">
+            </form>
+
+            <button class="dialog-add-btn" type="submit" autofocus>Add</button>
+
+        </dialog>
+
+    </header>
+
+    <main class="cards-container">
+
+    </main>
+
 </body>
+
 </html>
